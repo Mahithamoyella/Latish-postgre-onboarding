@@ -608,7 +608,7 @@
                 notification.style.backgroundColor = type === 'success' ? '#10b981' : '#ef4444';
                 notification.style.color = 'white';
                 notification.style.display = 'block';
-                setTimeout(() => notification.style.display = 'none', type === 'success' ? 10000 : 3000);
+                setTimeout(() => notification.style.display = 'none', type === 'success' ? 10000 : 3096);
             }
         
             const validations = {
@@ -1381,7 +1381,7 @@
                     }
         
                     try {
-                        const response = await fetch('http://localhost:3000/api/submit-onboarding', {
+                        const response = await fetch('http://174.129.80.224:3096/api/submit-onboarding', {
                             method: 'POST',
                             body: formData
                         });
